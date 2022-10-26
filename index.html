@@ -89,50 +89,54 @@
             </div>
           </form>
           <!-- Numeric Textfield -->
-        <form action="#">
-          <p>Width</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="b-trapezoid"
-              aria-label="B base"
-            />
-            <label class="mdl-textfield__label" for="b-trapezoid"
-              >B base ...</label
-            >
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-        </form>
-        <br />
+          <form action="#">
+            <p>Width</p>
+            <div class="mdl-textfield mdl-js-textfield">
+              <input
+                class="mdl-textfield__input"
+                type="text"
+                pattern="-?[0-9]*(\.[0-9]+)?"
+                id="b-trapezoid"
+                aria-label="B base"
+              />
+              <label class="mdl-textfield__label" for="b-trapezoid"
+                >B base ...</label
+              >
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </div>
+          </form>
+          <br />
           <!-- Numeric Textfield -->
-        <form action="#">
-          <p>Width</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="height"
-              aria-label="Height"
-            />
-            <label class="mdl-textfield__label" for="height"
-              >height ...</label
-            >
-            <span class="mdl-textfield__error">Input is not a number!</span>
+          <form action="#">
+            <p>Width</p>
+            <div class="mdl-textfield mdl-js-textfield">
+              <input
+                class="mdl-textfield__input"
+                type="text"
+                pattern="-?[0-9]*(\.[0-9]+)?"
+                id="height"
+                aria-label="Height"
+              />
+              <label class="mdl-textfield__label" for="height"
+                >height ...</label
+              >
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </div>
+          </form>
+          <br />
+          <!-- Raised button with ripple -->
+          <button
+            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            onclick="calculate()"
+          >
+            Calculate
+          </button>
+          <br />
+          <div id="answers">
+            <div id="area"></div>
           </div>
-        </form>
-        <br />
-        <!-- Raised button with ripple -->
-        <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="calculate()"
-        >
-          Calculate
-        </button>
-        <br />
-        <div id="answers">
-          <div id="area"></div>
-        </div>
-        
+        </table>
+      </main>
+    </div>
+  </body>
+</html>
