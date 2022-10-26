@@ -8,14 +8,23 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-Template-PWA/sw.js", {
-    scope: "/ICS2O-Template-PWA/",
+  navigator.serviceWorker.register("/ICS2O-Unit-3-01-JS/sw.js", {
+    scope: "/ICS2O-Unit-3-01-JS/",
   })
 }
 
 /**
- * This function displays an alert.
+ * This function calculates area of a triangle
  */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+ function calculate() {
+  // input
+  const abase = parseInt(document.getElementById("a-trapezoid").value)
+  const bbase = parseInt(document.getElementById("b-trapezoid").value)
+  const height = parseInt(document.getElementById("height").value)
+
+  // process
+  const area = ((abase+bbase)/2)*height
+
+  // output
+  document.getElementById("area").innerHTML = "Area is: " + area + " cm²"
 }
