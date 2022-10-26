@@ -45,36 +45,94 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   </head>
-  <title>My first PWA</title>
+  <title>Area of a Trapezoid</title>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./js/script.js"></script>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">My first PWA</span>
+          <span class="mdl-layout-title">Area of a Trapezoid</span>
         </div>
       </header>
       <main class="mdl-layout__content">
         <p></p>
         <img
-          src="./images/notebook-animation.svg"
-          alt="Computer"
+          src="./images/4.svg"
+          alt="Area of a Trapezoid"
           width="25%"
           height="25%"
         />
         <p></p>
+        <table>
+          <tr>
+            <th>
+              <h2>Formulas</h2>
+              <h3>A = BH/2</h3>
+            </th>
+          </tr>
+          <!-- Simple Textfield -->
+          <form action="#">
+            <p>Length</p>
+            <div class="mdl-textfield mdl-js-textfield">
+              <input
+                class="mdl-textfield__input"
+                type="text"
+                pattern="-?[0-9]*(\.[0-9]+)?"
+                id="a-trapezoid"
+                aria-label="A base"
+              />
+              <label class="mdl-textfield__label" for="a-trapezoid"
+                >base ...</label
+              >
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </div>
+          </form>
+          <!-- Numeric Textfield -->
+        <form action="#">
+          <p>Width</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="b-trapezoid"
+              aria-label="B base"
+            />
+            <label class="mdl-textfield__label" for="b-trapezoid"
+              >B base ...</label
+            >
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <br />
+          <!-- Numeric Textfield -->
+        <form action="#">
+          <p>Width</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="height"
+              aria-label="Height"
+            />
+            <label class="mdl-textfield__label" for="height"
+              >height ...</label
+            >
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <br />
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="myButtonClicked()"
+          onclick="calculate()"
         >
-          Say "Hello, World!"
+          Calculate
         </button>
-        <!-- basic text -->
-        <p></p>
-        <div id="hello-world"></div>
-      </main>
-    </div>
-  </body>
-</html>
+        <br />
+        <div id="answers">
+          <div id="area"></div>
+        </div>
+        
