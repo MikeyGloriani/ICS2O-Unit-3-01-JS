@@ -16,14 +16,14 @@ if (navigator.serviceWorker) {
 /**
  * This function calculates area of a triangle
  */
- function calculate() {
+function calculate() {
   // input
   const abase = parseInt(document.getElementById("a-trapezoid").value)
   const bbase = parseInt(document.getElementById("b-trapezoid").value)
   const height = parseInt(document.getElementById("height").value)
 
   // process
-  const area = ((abase+bbase)/2)*height
+  const area = ((abase + bbase) / 2) * height
 
   // output
   document.getElementById("area").innerHTML = "Area is: " + area + " cm²"
